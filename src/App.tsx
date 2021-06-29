@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import "./App.scss";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Shapes from './components/shapes/Shapes';
 import Login from './components/login/Login';
 import Header from './components/layout/Header';
-import Footer from './components/layout/footer';
+import Footer from './components/layout/Footer';
 import PrivateRoute from './utilties/PrivateRoute';
 import LoginState from "./context/login/LoginState";
 

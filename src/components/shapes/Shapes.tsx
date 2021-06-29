@@ -118,14 +118,6 @@ function Shapes(): JSX.Element {
     })
   }
 
-  // else if (arr1.some(([k, v]) => v === false) && arr2.filter(([k, v], _index, _arr) => v === true).length === 1) {
-  //   const color = arr2.filter(([k, v], _index, _arr) => v === true)[0][0];
-  //   setHeading(`Multiple ${color} items`)
-  // } else if (arr2.some(([k, v]) => v === false) && arr1.filter(([k, v], _index, _arr) => v === true).length === 1) {
-  //   const shape = arr1.filter(([k, v], _index, _arr) => v === true)[0][0];
-  //   setHeading(`Multiple ${shape} items`)
-  // }
-
   useEffect(() => {
     filterCards()
   }, [shapesState, colorState])
