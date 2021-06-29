@@ -1,4 +1,4 @@
-#SHAPES-TALENTQL
+# SHAPES-TALENTQL
 A shape filtering app built with react + typescript + vite.
 
 #####
@@ -17,7 +17,7 @@ password - TalentQL
   -App.tsx \
   -App.scss \
   -main.tsx \
-  -shapes.json \
+  -shapes.json
 
 #####
 ## SCRIPTS
