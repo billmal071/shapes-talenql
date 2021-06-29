@@ -1,0 +1,54 @@
+.h__90vh {
+  height: 84.5vh;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.login__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 20px 10px;
+}
+
+.login__input {
+  background: transparent;
+  width: 300px;
+  padding: 5px;
+  margin: 20px 4px;
+  border-radius: 7px;
+  font-size: 20px;
+  outline: none;
+}
+
+.login__text {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.login__btn {
+  background-color: green;
+  color: gainsboro;
+  width: 80px;
+  padding: 8px 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 1px solid green;
+  cursor: pointer;
+  
+  &:hover {
+    background-color: blue;
+    color: honeydew;
+    transform: scale(1.1);
+  }
+}

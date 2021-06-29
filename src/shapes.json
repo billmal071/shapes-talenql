@@ -1,0 +1,249 @@
+{
+  "data": [
+    {
+      "color": "blue",
+      "name": "rectangle",
+      "svg": "<svg width=\"200\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"> <g>  <rect fill=\"#0000ff\" x=\"10\" y=\"45\" width=\"230\" height=\"95\" id=\"svg_1\" stroke=\"#000\"/> </g></svg>"
+    },
+    {
+      "color": "red",
+      "name": "rectangle",
+      "svg": "<svg width=\"200\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"> <g>  <rect fill=\"#ff0000\" x=\"10\" y=\"45\" width=\"230\" height=\"95\" id=\"svg_1\" stroke=\"#000\"/> </g></svg>"
+    },
+    {
+      "color": "green",
+      "name": "rectangle",
+      "svg": "<svg width=\"200\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"> <g>  <rect fill=\"#00ff00\" x=\"10\" y=\"45\" width=\"180\" height=\"95\" id=\"svg_1\" stroke=\"#000\"/> </g></svg>"
+    },
+    {
+      "color": "yellow",
+      "name": "rectangle",
+      "svg": "<svg width=\"200\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"> <g>  <rect fill=\"#ffff00\" x=\"10\" y=\"45\" width=\"180\" height=\"95\" id=\"svg_1\" stroke=\"#000\"/> </g></svg>"
+    },
+    {
+      "color": "orange",
+      "name": "rectangle",
+      "svg": "<svg width=\"200\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"> <g>  <rect fill=\"#ff7f00\" x=\"10\" y=\"45\" width=\"180\" height=\"95\" id=\"svg_1\" stroke=\"#000\"/> </g></svg>"
+    },
+    {
+      "color": "grey",
+      "name": "rectangle",
+      "svg": "<svg width=\"200\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"> <g>  <rect fill=\"#7f7f7f\" x=\"10\" y=\"45\" width=\"180\" height=\"95\" id=\"svg_1\" stroke=\"#000\"/> </g></svg>"
+    },
+    {
+      "color": "purple",
+      "name": "rectangle",
+      "svg": "<svg width=\"200\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"> <g>  <rect fill=\"#aa56ff\" x=\"10\" y=\"45\" width=\"180\" height=\"95\" id=\"svg_1\" stroke=\"#000\"/> </g></svg>"
+    },
+    {
+      "color": "blue",
+      "name": "square",
+      "svg": "<svg width=\"200\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"><g><rect stroke=\"#000\" id=\"svg_3\" height=\"120\" width=\"120\" y=\"15\" x=\"30\" fill=\"#0000ff\"/></g></svg>"
+    },
+    {
+      "color": "red",
+      "name": "square",
+      "svg": "<svg width=\"200\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"><g><rect stroke=\"#000\" id=\"svg_3\" height=\"120\" width=\"120\" y=\"15\" x=\"30\" fill=\"#ff0000\"/></g></svg>"
+    },
+    {
+      "color": "green",
+      "name": "square",
+      "svg": "<svg width=\"200\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"><g><rect stroke=\"#000\" id=\"svg_3\" height=\"120\" width=\"120\" y=\"15\" x=\"30\" fill=\"#00ff00\"/></g></svg>"
+    },
+    {
+      "color": "yellow",
+      "name": "square",
+      "svg": "<svg width=\"200\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"><g><rect stroke=\"#000\" id=\"svg_3\" height=\"120\" width=\"120\" y=\"15\" x=\"30\" fill=\"#ffff00\"/></g></svg>"
+    },
+    {
+      "color": "orange",
+      "name": "square",
+      "svg": "<svg width=\"200\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"><g><rect stroke=\"#000\" id=\"svg_3\" height=\"120\" width=\"120\" y=\"15\" x=\"30\" fill=\"#ff7f00\"/></g></svg>"
+    },
+    {
+      "color": "grey",
+      "name": "square",
+      "svg": "<svg width=\"200\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"><g><rect stroke=\"#000\" id=\"svg_3\" height=\"120\" width=\"120\" y=\"15\" x=\"30\" fill=\"#7f7f7f\"/></g></svg>"
+    },
+    {
+      "color": "purple",
+      "name": "square",
+      "svg": "<svg width=\"200\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"><g><rect stroke=\"#000\" id=\"svg_3\" height=\"120\" width=\"120\" y=\"15\" x=\"30\" fill=\"#aa56ff\"/></g></svg>"
+    },
+    {
+      "color": "blue",
+      "name": "triangle",
+      "svg": "<svg width=\"200\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"><g><path id=\"svg_5\" d=\"m48.30355,117.4487l51.27655,-88.9361l51.27655,88.9361l-102.55311,0z\" stroke=\"#000\" fill=\"#0000ff\"/></g></svg>"
+    },
+    {
+      "color": "red",
+      "name": "triangle",
+      "svg": "<svg width=\"200\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"><g><path id=\"svg_5\" d=\"m48.30355,117.4487l51.27655,-88.9361l51.27655,88.9361l-102.55311,0z\" stroke=\"#000\" fill=\"#ff0000\"/></g></svg>"
+    },
+    {
+      "color": "green",
+      "name": "triangle",
+      "svg": "<svg width=\"200\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"><g><path id=\"svg_5\" d=\"m48.30355,117.4487l51.27655,-88.9361l51.27655,88.9361l-102.55311,0z\" stroke=\"#000\" fill=\"#00ff00\"/></g></svg>"
+    },
+    {
+      "color": "yellow",
+      "name": "triangle",
+      "svg": "<svg width=\"200\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"><g><path id=\"svg_5\" d=\"m48.30355,117.4487l51.27655,-88.9361l51.27655,88.9361l-102.55311,0z\" stroke=\"#000\" fill=\"#ffff00\"/></g></svg>"
+    },
+    {
+      "color": "orange",
+      "name": "triangle",
+      "svg": "<svg width=\"200\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"><g><path id=\"svg_5\" d=\"m48.30355,117.4487l51.27655,-88.9361l51.27655,88.9361l-102.55311,0z\" stroke=\"#000\" fill=\"#ff7f00\"/></g></svg>"
+    },
+    {
+      "color": "grey",
+      "name": "triangle",
+      "svg": "<svg width=\"200\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"><g><path id=\"svg_5\" d=\"m48.30355,117.4487l51.27655,-88.9361l51.27655,88.9361l-102.55311,0z\" stroke=\"#000\" fill=\"#7f7f7f\"/></g></svg>"
+    },
+    {
+      "color": "purple",
+      "name": "triangle",
+      "svg": "<svg width=\"200\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"><g><path id=\"svg_5\" d=\"m48.30355,117.4487l51.27655,-88.9361l51.27655,88.9361l-102.55311,0z\" stroke=\"#000\" fill=\"#aa56ff\"/></g></svg>"
+    },
+    {
+      "color": "blue",
+      "name": "oval",
+      "svg": "<svg width=\"200\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"><g><ellipse ry=\"59.36165\" rx=\"39.57443\" id=\"svg_6\" cy=\"70.48924\" cx=\"100.85106\" stroke=\"#000\" fill=\"#0000ff\"/></g></svg>"
+    },
+    {
+      "color": "red",
+      "name": "oval",
+      "svg": "<svg width=\"200\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"><g><ellipse ry=\"59.36165\" rx=\"39.57443\" id=\"svg_6\" cy=\"70.48924\" cx=\"100.85106\" stroke=\"#000\" fill=\"#ff0000\"/></g></svg>"
+    },
+    {
+      "color": "green",
+      "name": "oval",
+      "svg": "<svg width=\"200\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"><g><ellipse ry=\"59.36165\" rx=\"39.57443\" id=\"svg_6\" cy=\"70.48924\" cx=\"100.85106\" stroke=\"#000\" fill=\"#00ff00\"/></g></svg>"
+    },
+    {
+      "color": "yellow",
+      "name": "oval",
+      "svg": "<svg width=\"200\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"><g><ellipse ry=\"59.36165\" rx=\"39.57443\" id=\"svg_6\" cy=\"70.48924\" cx=\"100.85106\" stroke=\"#000\" fill=\"#ffff00\"/></g></svg>"
+    },
+    {
+      "color": "orange",
+      "name": "oval",
+      "svg": "<svg width=\"200\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"><g><ellipse ry=\"59.36165\" rx=\"39.57443\" id=\"svg_6\" cy=\"70.48924\" cx=\"100.85106\" stroke=\"#000\" fill=\"#ff7f00\"/></g></svg>"
+    },
+    {
+      "color": "grey",
+      "name": "oval",
+      "svg": "<svg width=\"200\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"><g><ellipse ry=\"59.36165\" rx=\"39.57443\" id=\"svg_6\" cy=\"70.48924\" cx=\"100.85106\" stroke=\"#000\" fill=\"#7f7f7f\"/></g></svg>"
+    },
+    {
+      "color": "purple",
+      "name": "oval",
+      "svg": "<svg width=\"200\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"><g><ellipse ry=\"59.36165\" rx=\"39.57443\" id=\"svg_6\" cy=\"70.48924\" cx=\"100.85106\" stroke=\"#000\" fill=\"#aa56ff\"/></g></svg>"
+    },
+    {
+      "color": "blue",
+      "name": "circle",
+      "svg": "<svg width=\"200\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"><g><ellipse ry=\"50\" rx=\"55.42552\" id=\"svg_7\" cy=\"73.89349\" cx=\"104.46808\" stroke=\"#000\" fill=\"#0000ff\"/></g></svg>"
+    },
+    {
+      "color": "red",
+      "name": "circle",
+      "svg": "<svg width=\"200\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"><g><ellipse ry=\"50\" rx=\"55.42552\" id=\"svg_7\" cy=\"73.89349\" cx=\"104.46808\" stroke=\"#000\" fill=\"#ff0000\"/></g></svg>"
+    },
+    {
+      "color": "green",
+      "name": "circle",
+      "svg": "<svg width=\"200\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"><g><ellipse ry=\"50\" rx=\"55.42552\" id=\"svg_7\" cy=\"73.89349\" cx=\"104.46808\" stroke=\"#000\" fill=\"#00ff00\"/></g></svg>"
+    },
+    {
+      "color": "yellow",
+      "name": "circle",
+      "svg": "<svg width=\"200\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"><g><ellipse ry=\"50\" rx=\"55.42552\" id=\"svg_7\" cy=\"73.89349\" cx=\"104.46808\" stroke=\"#000\" fill=\"#ffff00\"/></g></svg>"
+    },
+    {
+      "color": "orange",
+      "name": "circle",
+      "svg": "<svg width=\"200\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"><g><ellipse ry=\"50\" rx=\"55.42552\" id=\"svg_7\" cy=\"73.89349\" cx=\"104.46808\" stroke=\"#000\" fill=\"#ff7f00\"/></g></svg>"
+    },
+    {
+      "color": "grey",
+      "name": "circle",
+      "svg": "<svg width=\"200\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"><g><ellipse ry=\"50\" rx=\"55.42552\" id=\"svg_7\" cy=\"73.89349\" cx=\"104.46808\" stroke=\"#000\" fill=\"#7f7f7f\"/></g></svg>"
+    },
+    {
+      "color": "purple",
+      "name": "circle",
+      "svg": "<svg width=\"200\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"><g><ellipse ry=\"50\" rx=\"55.42552\" id=\"svg_7\" cy=\"73.89349\" cx=\"104.46808\" stroke=\"#000\" fill=\"#aa56ff\"/></g></svg>"
+    },
+    {
+      "color": "blue",
+      "name": "pentagon",
+      "svg": "<svg width=\"200\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"><g><path id=\"svg_8\" d=\"m36.70504,59.74729l67.2339,-39.82185l67.23406,39.82185l-25.68101,64.43338l-83.10587,0l-25.68109,-64.43338z\" stroke=\"#000\" fill=\"#0000ff\"/></g></svg>"
+    },
+    {
+      "color": "red",
+      "name": "pentagon",
+      "svg": "<svg width=\"200\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"><g><path id=\"svg_8\" d=\"m36.70504,59.74729l67.2339,-39.82185l67.23406,39.82185l-25.68101,64.43338l-83.10587,0l-25.68109,-64.43338z\" stroke=\"#000\" fill=\"#ff0000\"/></g></svg>"
+    },
+    {
+      "color": "green",
+      "name": "pentagon",
+      "svg": "<svg width=\"200\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"><g><path id=\"svg_8\" d=\"m36.70504,59.74729l67.2339,-39.82185l67.23406,39.82185l-25.68101,64.43338l-83.10587,0l-25.68109,-64.43338z\" stroke=\"#000\" fill=\"#00ff00\"/></g></svg>"
+    },
+    {
+      "color": "yellow",
+      "name": "pentagon",
+      "svg": "<svg width=\"200\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"><g><path id=\"svg_8\" d=\"m36.70504,59.74729l67.2339,-39.82185l67.23406,39.82185l-25.68101,64.43338l-83.10587,0l-25.68109,-64.43338z\" stroke=\"#000\" fill=\"#ffff00\"/></g></svg>"
+    },
+    {
+      "color": "orange",
+      "name": "pentagon",
+      "svg": "<svg width=\"200\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"><g><path id=\"svg_8\" d=\"m36.70504,59.74729l67.2339,-39.82185l67.23406,39.82185l-25.68101,64.43338l-83.10587,0l-25.68109,-64.43338z\" stroke=\"#000\" fill=\"#ff7f00\"/></g></svg>"
+    },
+    {
+      "color": "grey",
+      "name": "pentagon",
+      "svg": "<svg width=\"200\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"><g><path id=\"svg_8\" d=\"m36.70504,59.74729l67.2339,-39.82185l67.23406,39.82185l-25.68101,64.43338l-83.10587,0l-25.68109,-64.43338z\" stroke=\"#000\" fill=\"#7f7f7f\"/></g></svg>"
+    },
+    {
+      "color": "purple",
+      "name": "pentagon",
+      "svg": "<svg width=\"200\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"><g><path id=\"svg_8\" d=\"m36.70504,59.74729l67.2339,-39.82185l67.23406,39.82185l-25.68101,64.43338l-83.10587,0l-25.68109,-64.43338z\" stroke=\"#000\" fill=\"#aa56ff\"/></g></svg>"
+    },
+    {
+      "color": "blue",
+      "name": "star",
+      "svg": "<svg width=\"200\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"><g><path id=\"svg_7\" d=\"m27.93058,59.99083l56.40129,0l17.42843,-43.39792l17.42844,43.39792l56.40128,0l-45.62952,26.82108l17.42933,43.39792l-45.62954,-26.82181l-45.62953,26.82181l17.42934,-43.39792l-45.62953,-26.82108z\" stroke=\"#000\" fill=\"#0000ff\"/></g></svg>"
+    },
+    {
+      "color": "red",
+      "name": "star",
+      "svg": "<svg width=\"200\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"><g><path id=\"svg_7\" d=\"m27.93058,59.99083l56.40129,0l17.42843,-43.39792l17.42844,43.39792l56.40128,0l-45.62952,26.82108l17.42933,43.39792l-45.62954,-26.82181l-45.62953,26.82181l17.42934,-43.39792l-45.62953,-26.82108z\" stroke=\"#000\" fill=\"#ff0000\"/></g></svg>"
+    },
+    {
+      "color": "green",
+      "name": "star",
+      "svg": "<svg width=\"200\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"><g><path id=\"svg_7\" d=\"m27.93058,59.99083l56.40129,0l17.42843,-43.39792l17.42844,43.39792l56.40128,0l-45.62952,26.82108l17.42933,43.39792l-45.62954,-26.82181l-45.62953,26.82181l17.42934,-43.39792l-45.62953,-26.82108z\" stroke=\"#000\" fill=\"#00ff00\"/></g></svg>"
+    },
+    {
+      "color": "yellow",
+      "name": "star",
+      "svg": "<svg width=\"200\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"><g><path id=\"svg_7\" d=\"m27.93058,59.99083l56.40129,0l17.42843,-43.39792l17.42844,43.39792l56.40128,0l-45.62952,26.82108l17.42933,43.39792l-45.62954,-26.82181l-45.62953,26.82181l17.42934,-43.39792l-45.62953,-26.82108z\" stroke=\"#000\" fill=\"#ffff00\"/></g></svg>"
+    },
+    {
+      "color": "orange",
+      "name": "star",
+      "svg": "<svg width=\"200\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"><g><path id=\"svg_7\" d=\"m27.93058,59.99083l56.40129,0l17.42843,-43.39792l17.42844,43.39792l56.40128,0l-45.62952,26.82108l17.42933,43.39792l-45.62954,-26.82181l-45.62953,26.82181l17.42934,-43.39792l-45.62953,-26.82108z\" stroke=\"#000\" fill=\"#ff7f00\"/></g></svg>"
+    },
+    {
+      "color": "grey",
+      "name": "star",
+      "svg": "<svg width=\"200\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"><g><path id=\"svg_7\" d=\"m27.93058,59.99083l56.40129,0l17.42843,-43.39792l17.42844,43.39792l56.40128,0l-45.62952,26.82108l17.42933,43.39792l-45.62954,-26.82181l-45.62953,26.82181l17.42934,-43.39792l-45.62953,-26.82108z\" stroke=\"#000\" fill=\"#7f7f7f\"/></g></svg>"
+    },
+    {
+      "color": "purple",
+      "name": "star",
+      "svg": "<svg width=\"200\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"><g><path id=\"svg_7\" d=\"m27.93058,59.99083l56.40129,0l17.42843,-43.39792l17.42844,43.39792l56.40128,0l-45.62952,26.82108l17.42933,43.39792l-45.62954,-26.82181l-45.62953,26.82181l17.42934,-43.39792l-45.62953,-26.82108z\" stroke=\"#000\" fill=\"#aa56ff\"/></g></svg>"
+    }
+  ]
+}
