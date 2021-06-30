@@ -9,6 +9,11 @@ password - TalentQL
 
 #####
 
+## VISUALS
+
+
+#####
+
 ## FILE STRUCTURE
 -src \
   +components \
@@ -20,6 +25,7 @@ password - TalentQL
   -shapes.json
 
 #####
+
 ## SCRIPTS
 ```javascript
 dev - npm run dev
