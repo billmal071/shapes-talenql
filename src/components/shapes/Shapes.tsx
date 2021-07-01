@@ -3,8 +3,6 @@ import Styles from "./shapes.module.scss";
 import Data from "../../shapes.json";
 
 function Shapes(): JSX.Element {
-  //console.log(Data);
-
   const [heading, setHeading] = useState<string>("All Items");
   const [shapesState, setShapesState] = useState({
     circle: true,
@@ -53,7 +51,6 @@ function Shapes(): JSX.Element {
           }
         }
         if (arr1.every(([k, v]) => v === false) || arr2.every(([k, v]) => v === false)) {
-          console.log(false);
           setShapesState(prevState => ({
             ...prevState,
             circle: true,
@@ -80,13 +77,10 @@ function Shapes(): JSX.Element {
           }
         }
         if (arr1.every(([k, v]) => v === true) && arr2.every(([k, v]) => v === true)) {
-          console.log(arr2.filter(([k, v], _index, _arr) => v === true))
           setHeading("All Items");
         } else if ((arr1.every(([k, v]) => v === true) && arr2.some(([k, v]) => v === false)) || (arr1.some(([k, v]) => v === false) && arr2.every(([k, v]) => v === true))) {
-          console.log(arr2.filter(([k, v], _index, _arr) => v === true).length)
           setHeading("Multiple items")
           if (arr1.every(([k, v]) => v === true) && arr2.filter(([k, v], _index, _arr) => v === true).length === 1) {
-            console.log(arr2.filter(([k, v], _index, _arr) => v === true)[0][0])
             const color = arr2.filter(([k, v], _index, _arr) => v === true)[0][0];
             setHeading(`All ${color} items`)
           } else if (arr2.every(([k, v]) => v === true) && arr1.filter(([k, v], _index, _arr) => v === true).length === 1) {
@@ -187,7 +181,7 @@ function Shapes(): JSX.Element {
               />
             </label>
             <label htmlFor="triangle" className={`${Styles.checkbox} ${shapesState.triangle ? 'selected' : 'unselected'}`}>
-              triangle <input type="checkbox" name="triangle" id="triangle"
+              triangle <input data-testid="triangle" type="checkbox" name="triangle" id="triangle"
                 value="triangle" checked={shapesState.triangle} onChange={(e) => setShapesState(prevState => ({
                   ...prevState,
                   [e.target.name]: e.target.checked
@@ -258,7 +252,7 @@ function Shapes(): JSX.Element {
               />
             </label>
             <label htmlFor="purple" className={`${Styles.round} ${Styles.purple} ${colorState.purple ? 'highlighted' : 'unhighlighted'}`}>
-              <input type="checkbox" name="purple" id="purple"
+              <input data-testid="purple" type="checkbox" name="purple" id="purple"
                 value="purple" checked={colorState.purple} onChange={(e) => setColorState(prevState => ({
                   ...prevState,
                   [e.target.name]: e.target.checked

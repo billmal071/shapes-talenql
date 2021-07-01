@@ -15,14 +15,14 @@ password - TalentQL
 #####
 
 ## FILE STRUCTURE
--src \
-  +components \
-  +context \
-  +utilities \
-  -App.tsx \
-  -App.scss \
-  -main.tsx \
-  -shapes.json
+|---src #
+|-------components \
+|------------context \
+|------------utilities \
+|-------App.tsx \
+|-------App.scss \
+|-------main.tsx \
+|-------shapes.json
 
 #####
 
@@ -37,4 +37,4 @@ test - npm run test
 #####
 
 ## DEPLOYED LINK
-[link](put link here)
+[link](https://shapes-talentql.netlify.app)
