@@ -19,7 +19,7 @@ function ShapeCheckbox({ shape, isChecked, handleChange }: Props) {
   return (
     <>
       <label htmlFor={shape} className={`${Styles.checkbox} ${isChecked ? 'selected' : 'unselected'}`}>
-        {shape}<input type="checkbox" name={shape} id={shape}
+        {shape}<input data-testid={shape} type="checkbox" name={shape} id={shape}
           value={shape} checked={isChecked} onChange={(e) => handleChange(prevState => ({
             ...prevState,
             [e.target.name]: e.target.checked

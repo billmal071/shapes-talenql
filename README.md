@@ -15,7 +15,7 @@ password - TalentQL
 #####
 
 ## FILE STRUCTURE
-|---src #
+|---src \
 |-------components \
 |------------context \
 |------------utilities \

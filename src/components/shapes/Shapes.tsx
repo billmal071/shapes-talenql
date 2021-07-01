@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Styles from "./shapes.module.scss";
 import Data from "../../shapes.json";
 import ColorCheckbox from './ColorCheckbox';
 import ShapeCheckbox from './ShapeCheckbox';
+import helper from './helper';
 
 function Shapes(): JSX.Element {
+  const itemRef: React.LegacyRef<HTMLDivElement> = useRef<HTMLDivElement>(null);
   const [heading, setHeading] = useState<string>("All Items");
   const [shapesState, setShapesState] = useState({
     circle: true,
@@ -27,9 +29,10 @@ function Shapes(): JSX.Element {
 
   function filterCards(): void {
     const wrapper = document.getElementsByClassName('items')[0];
-    Object.entries(shapesState).map(([key, value], _index, arr1) => {
+    itemRef;
+    Object.entries(shapesState).map(([key, value], _index, shapes) => {
       //console.log(key + " " + value)
-      Object.entries(colorState).map(([color, boole], _index, arr2) => {
+      Object.entries(colorState).map(([color, boole], _index, colors) => {
         //console.log(key + " " + value)
 
         if (!value || !boole) {
@@ -52,7 +55,7 @@ function Shapes(): JSX.Element {
             }
           }
         }
-        if (arr1.every(([k, v]) => v === false) || arr2.every(([k, v]) => v === false)) {
+        if (shapes.every(([k, v]) => v === false) || colors.every(([k, v]) => v === false)) {
           setShapesState(prevState => ({
             ...prevState,
             circle: true,
@@ -78,38 +81,7 @@ function Shapes(): JSX.Element {
             classes.classList.remove('hide');
           }
         }
-        if (arr1.every(([k, v]) => v === true) && arr2.every(([k, v]) => v === true)) {
-          setHeading("All Items");
-        } else if ((arr1.every(([k, v]) => v === true) && arr2.some(([k, v]) => v === false)) || (arr1.some(([k, v]) => v === false) && arr2.every(([k, v]) => v === true))) {
-          setHeading("Multiple items")
-          if (arr1.every(([k, v]) => v === true) && arr2.filter(([k, v], _index, _arr) => v === true).length === 1) {
-            const color = arr2.filter(([k, v], _index, _arr) => v === true)[0][0];
-            setHeading(`All ${color} items`)
-          } else if (arr2.every(([k, v]) => v === true) && arr1.filter(([k, v], _index, _arr) => v === true).length === 1) {
-            const shape = arr1.filter(([k, v], _index, _arr) => v === true)[0][0];
-            setHeading(`All ${shape} items`)
-          }
-        } else if (arr1.some(([k, v]) => v === false) && arr2.filter(([k, v], _index, _arr) => v === true).length === 1) {
-          const color = arr2.filter(([k, v], _index, _arr) => v === true)[0][0];
-          setHeading(`Multiple ${color} items`)
-          if (arr1.filter(([k, v], _index, _arr) => v === true).length === 1 && arr2.filter(([k, v], _index, _arr) => v === true).length === 1) {
-            const color = arr2.filter(([k, v], _index, _arr) => v === true)[0][0];
-            const shape = arr1.filter(([k, v], _index, _arr) => v === true)[0][0];
-            setHeading(`${color} ${shape} item`)
-          }
-        } else if (arr2.some(([k, v]) => v === false) && arr1.filter(([k, v], _index, _arr) => v === true).length === 1) {
-          const shape = arr1.filter(([k, v], _index, _arr) => v === true)[0][0];
-          setHeading(`Multiple ${shape} items`)
-          if (arr1.filter(([k, v], _index, _arr) => v === true).length === 1 && arr2.filter(([k, v], _index, _arr) => v === true).length === 1) {
-            const color = arr2.filter(([k, v], _index, _arr) => v === true)[0][0];
-            const shape = arr1.filter(([k, v], _index, _arr) => v === true)[0][0];
-            setHeading(`${color} ${shape} item`)
-          }
-        } else if (arr1.filter(([k, v], _index, _arr) => v === true).length === 1 && arr2.filter(([k, v], _index, _arr) => v === true).length === 1) {
-          const color = arr2.filter(([k, v], _index, _arr) => v === true)[0][0];
-          const shape = arr1.filter(([k, v], _index, _arr) => v === true)[0][0];
-          setHeading(`${color} ${shape} item`)
-        }
+        helper(shapes, colors, setHeading)
       })
     })
   }
@@ -119,14 +91,17 @@ function Shapes(): JSX.Element {
   }, [shapesState, colorState])
 
   useEffect(() => {
-    const items = document.getElementsByClassName('items')[0];
+    //const items = document.getElementsByClassName('items')[0];
+    //console.log(itemRef.current)
     let img = document.createElement('img');
     Data.data.map(({ color, name, svg }, index) => {
-      items.innerHTML += `
-      <div key=${index} class="${Styles.grid__item_box} ${color} ${name}">
-      ${img.src = svg}
-    </div>
-      `
+      if (itemRef.current !== null) {
+        itemRef.current.innerHTML += `
+        <div key=${index} class="${Styles.grid__item_box} ${color} ${name}">
+        ${img.src = svg}
+      </div>
+        `
+      }
     })
   }, [])
 
@@ -138,7 +113,7 @@ function Shapes(): JSX.Element {
           <p className={`${Styles.text} capitalize mb__10`}>shapes</p>
           <div className={`${Styles.flex} shapes-filter`}>
             {
-              Object.entries(shapesState).map(([key, value], index, arr1) => (
+              Object.entries(shapesState).map(([key, value], index, shapes) => (
                 <ShapeCheckbox key={index} shape={key} isChecked={value} handleChange={setShapesState} />
               ))
             }
@@ -148,7 +123,7 @@ function Shapes(): JSX.Element {
           <p className={`${Styles.text} capitalize mb__10`}>colors</p>
           <div className={`${Styles.flex} color-filter`}>
             {
-              Object.entries(colorState).map(([key, value], index, arr2) => (
+              Object.entries(colorState).map(([key, value], index, colors) => (
                 <ColorCheckbox key={index} color={key} isChecked={value} handleChange={setColorState} />
               ))
             }
@@ -157,7 +132,7 @@ function Shapes(): JSX.Element {
       </div>
       <div>
         <h4>{heading}</h4>
-        <div className={`${Styles.grid__item} items`}>
+        <div ref={itemRef} className={`${Styles.grid__item} items`}>
         </div>
       </div>
     </main>

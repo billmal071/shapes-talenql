@@ -19,7 +19,7 @@ function ColorCheckbox({ color, isChecked, handleChange }: Props) {
   return (
     <>
       <label htmlFor={color} className={`${Styles.round} ${Styles[color]} ${isChecked ? 'highlighted' : 'unhighlighted'}`}>
-        <input type="checkbox" name={color} id={color}
+        <input data-testid={color} type="checkbox" name={color} id={color}
           value={color} checked={isChecked} onChange={(e) => handleChange(prevState => ({
             ...prevState,
             [e.target.name]: e.target.checked

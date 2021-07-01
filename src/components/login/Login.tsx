@@ -14,7 +14,7 @@ function Login() {
     e.preventDefault();
 
     if (username.trim() === "") {
-      console.log("no username")
+      //console.log("no username")
       await Swal.fire({
         icon: "error",
         text: "Enter a username"
@@ -22,7 +22,7 @@ function Login() {
     }
 
     if (password.trim() === "") {
-      console.log("no password")
+      //console.log("no password")
       await Swal.fire({
         icon: "error",
         text: "Enter a password"
@@ -30,10 +30,10 @@ function Login() {
     }
 
     if (username.match("Test1") && password.match("TalentQL")) {
-      console.log(password);
+      //console.log(password);
       login({ username, password })
     } else {
-      console.log("wrong credentials")
+      //console.log("wrong credentials")
       await Swal.fire({
         icon: "error",
         text: "Wrong Credentials"
