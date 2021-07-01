@@ -9,6 +9,19 @@ import Login from '../components/login/Login';
  */
 
 describe("<Login />", () => {
+
+  test("input should be dispayed to user", () => {
+    const {getByTestId} = render(<Login />);
+    const username = getByTestId("username");
+    const password = getByTestId("password");
+
+    expect(username).toBeInTheDocument();
+    expect(username).toBeRequired();
+
+    expect(password).toBeInTheDocument();
+    expect(password).toBeRequired();
+  })
+
   test("should display a login form", async () => {
     const { findByTestId } = render(<Login />);
     const loginForm = await findByTestId("loginForm");
@@ -38,10 +51,6 @@ describe("<Login />", () => {
   test("should submit the form with username and password", async () => {
     const handleSubmit = jest.fn();
     const { getByTestId } = render(<Login />);
-    const { getInstance, toJSON } = renderer.create(<Login />);
-
-    let tree = toJSON();
-    expect(tree).toMatchSnapshot();
 
     fireEvent.change(getByTestId("username"), { target: { value: "Test1" } })
     fireEvent.change(getByTestId("password"), { target: { value: "TalentQL" } })

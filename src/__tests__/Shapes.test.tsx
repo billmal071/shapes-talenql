@@ -9,7 +9,9 @@ import Shapes from '../components/shapes/Shapes';
  */
 
 describe("< Shapes />", () => {
+  
   test('purple checkbox value to change', () => {
+    
     render(<Shapes />)
     const purple = screen.getByTestId("purple");
     expect(purple).toBeChecked();

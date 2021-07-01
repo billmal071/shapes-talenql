@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Styles from "./shapes.module.scss";
 import Data from "../../shapes.json";
+import ColorCheckbox from './ColorCheckbox';
+import ShapeCheckbox from './ShapeCheckbox';
 
 function Shapes(): JSX.Element {
   const [heading, setHeading] = useState<string>("All Items");
@@ -135,130 +137,21 @@ function Shapes(): JSX.Element {
         <div className={`${Styles.box}`}>
           <p className={`${Styles.text} capitalize mb__10`}>shapes</p>
           <div className={`${Styles.flex} shapes-filter`}>
-            <label htmlFor="circle" className={`${Styles.checkbox} ${shapesState.circle ? 'selected' : 'unselected'}`}>
-              circle<input type="checkbox" name="circle" id="circle"
-                value="circle" checked={shapesState.circle} onChange={(e) => setShapesState(prevState => ({
-                  ...prevState,
-                  [e.target.name]: e.target.checked
-                }))
-                }
-              />
-            </label>
-            <label htmlFor="oval" className={`${Styles.checkbox} ${shapesState.oval ? 'selected' : 'unselected'}`}>
-              oval<input type="checkbox" name="oval" id="oval"
-                value="oval" checked={shapesState.oval} onChange={(e) => setShapesState(prevState => ({
-                  ...prevState,
-                  [e.target.name]: e.target.checked
-                }))
-                }
-              />
-            </label>
-            <label htmlFor="star" className={`${Styles.checkbox} ${shapesState.star ? 'selected' : 'unselected'}`}>
-              star <input type="checkbox" name="star" id="star"
-                value="star" checked={shapesState.star} onChange={(e) => setShapesState(prevState => ({
-                  ...prevState,
-                  [e.target.name]: e.target.checked
-                }))
-                }
-              />
-            </label>
-            <label htmlFor="square" className={`${Styles.checkbox} ${shapesState.square ? 'selected' : 'unselected'}`}>
-              square <input type="checkbox" name="square" id="square"
-                value="square" checked={shapesState.square} onChange={(e) => setShapesState(prevState => ({
-                  ...prevState,
-                  [e.target.name]: e.target.checked
-                }))
-                }
-              />
-            </label>
-            <label htmlFor="rectangle" className={`${Styles.checkbox} ${shapesState.rectangle ? 'selected' : 'unselected'}`}>
-              rectangle <input type="checkbox" name="rectangle" id="rectangle"
-                value="rectangle" checked={shapesState.rectangle} onChange={(e) => setShapesState(prevState => ({
-                  ...prevState,
-                  [e.target.name]: e.target.checked
-                }))
-                }
-              />
-            </label>
-            <label htmlFor="triangle" className={`${Styles.checkbox} ${shapesState.triangle ? 'selected' : 'unselected'}`}>
-              triangle <input data-testid="triangle" type="checkbox" name="triangle" id="triangle"
-                value="triangle" checked={shapesState.triangle} onChange={(e) => setShapesState(prevState => ({
-                  ...prevState,
-                  [e.target.name]: e.target.checked
-                }))
-                }
-              />
-            </label>
-            <label htmlFor="pentagon" className={`${Styles.checkbox} ${shapesState.pentagon ? 'selected' : 'unselected'}`}>
-              pentagon <input type="checkbox" name="pentagon" id="pentagon"
-                value="pentagon" checked={shapesState.pentagon} onChange={(e) => setShapesState(prevState => ({
-                  ...prevState,
-                  [e.target.name]: e.target.checked
-                }))
-                }
-              />
-            </label>
+            {
+              Object.entries(shapesState).map(([key, value], index, arr1) => (
+                <ShapeCheckbox key={index} shape={key} isChecked={value} handleChange={setShapesState} />
+              ))
+            }
           </div>
         </div>
         <div className={`${Styles.box}`}>
           <p className={`${Styles.text} capitalize mb__10`}>colors</p>
           <div className={`${Styles.flex} color-filter`}>
-            <label htmlFor="blue" className={`${Styles.round} ${Styles.blue} ${colorState.blue ? 'highlighted' : 'unhighlighted'}`}>
-              <input type="checkbox" name="blue" id="blue"
-                value="blue" checked={colorState.blue} onChange={(e) => setColorState(prevState => ({
-                  ...prevState,
-                  [e.target.name]: e.target.checked
-                }))}
-              />
-            </label>
-            <label htmlFor="red" className={`${Styles.round} ${Styles.red} ${colorState.red ? 'highlighted' : 'unhighlighted'}`}>
-              <input type="checkbox" name="red" id="red"
-                value="red" checked={colorState.red} onChange={(e) => setColorState(prevState => ({
-                  ...prevState,
-                  [e.target.name]: e.target.checked
-                }))}
-              />
-            </label>
-            <label htmlFor="green" className={`${Styles.round} ${Styles.green} ${colorState.green ? 'highlighted' : 'unhighlighted'}`}>
-              <input type="checkbox" name="green" id="green"
-                value="green" checked={colorState.green} onChange={(e) => setColorState(prevState => ({
-                  ...prevState,
-                  [e.target.name]: e.target.checked
-                }))}
-              />
-            </label>
-            <label htmlFor="yellow" className={`${Styles.round} ${Styles.yellow} ${colorState.yellow ? 'highlighted' : 'unhighlighted'}`}>
-              <input type="checkbox" name="yellow" id="yellow"
-                value="yellow" checked={colorState.yellow} onChange={(e) => setColorState(prevState => ({
-                  ...prevState,
-                  [e.target.name]: e.target.checked
-                }))}
-              />
-            </label>
-            <label htmlFor="orange" className={`${Styles.round} ${Styles.orange} ${colorState.orange ? 'highlighted' : 'unhighlighted'}`}>
-              <input type="checkbox" name="orange" id="orange"
-                value="orange" checked={colorState.orange} onChange={(e) => setColorState(prevState => ({
-                  ...prevState,
-                  [e.target.name]: e.target.checked
-                }))}
-              />
-            </label>
-            <label htmlFor="grey" className={`${Styles.round} ${Styles.grey} ${colorState.grey ? 'highlighted' : 'unhighlighted'}`}>
-              <input type="checkbox" name="grey" id="grey"
-                value="grey" checked={colorState.grey} onChange={(e) => setColorState(prevState => ({
-                  ...prevState,
-                  [e.target.name]: e.target.checked
-                }))}
-              />
-            </label>
-            <label htmlFor="purple" className={`${Styles.round} ${Styles.purple} ${colorState.purple ? 'highlighted' : 'unhighlighted'}`}>
-              <input data-testid="purple" type="checkbox" name="purple" id="purple"
-                value="purple" checked={colorState.purple} onChange={(e) => setColorState(prevState => ({
-                  ...prevState,
-                  [e.target.name]: e.target.checked
-                }))}
-              />
-            </label>
+            {
+              Object.entries(colorState).map(([key, value], index, arr2) => (
+                <ColorCheckbox key={index} color={key} isChecked={value} handleChange={setColorState} />
+              ))
+            }
           </div>
         </div>
       </div>
