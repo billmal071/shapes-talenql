@@ -5,14 +5,8 @@ export type Props = {
   shape: string,
   isChecked: boolean,
   handleChange: React.Dispatch<React.SetStateAction<{
-    circle: boolean;
-    oval: boolean;
-    star: boolean;
-    square: boolean;
-    rectangle: boolean;
-    triangle: boolean;
-    pentagon: boolean;
-  }>>
+    [key: string]: boolean;
+}>>
 }
 
 function ShapeCheckbox({ shape, isChecked, handleChange }: Props) {

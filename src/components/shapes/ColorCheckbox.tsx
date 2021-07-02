@@ -5,14 +5,8 @@ export type Props = {
   color: string,
   isChecked: boolean,
   handleChange: React.Dispatch<React.SetStateAction<{
-    blue: boolean;
-    red: boolean;
-    green: boolean;
-    yellow: boolean;
-    orange: boolean;
-    grey: boolean;
-    purple: boolean;
-  }>>
+    [key: string]: boolean;
+}>>
 }
 
 function ColorCheckbox({ color, isChecked, handleChange }: Props) {
